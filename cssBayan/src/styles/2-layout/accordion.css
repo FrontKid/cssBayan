@@ -2,6 +2,15 @@
   cursor: pointer;
 }
 
+.css-bayan-title {
+  font-size: 2.5rem;
+  padding: 1.4rem 0;
+}
+
+.css-bayan__title {
+  font-size: 1.5rem;
+}
+
 .css-bayan__label {
   position: relative;
   display: block;
@@ -12,36 +21,55 @@
   cursor: pointer;
   border-top: 2px solid #3d3d3d;
 }
-.css-bayan__title {
+.css-bayan__box {
   position: relative;
+  padding: 10px 0;
 }
-.css-bayan__title::after {
-  content: "";
+.css-bayan__icon {
   position: absolute;
-  width: 18px;
-  height: 18px;
   right: 0;
   top: 50%;
   opacity: 0;
+  width: 1.1rem;
+  height: 1.1rem;
   transform: translateY(-50%);
-  background-image: url("../../img/plus.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
-.css-bayan:hover .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__title::after,
-.css-bayan:hover .css-bayan__radio:not(:checked) ~ .css-bayan__label > .css-bayan__title::after {
+.css-bayan__article-meme {
+  transform: scale(0);
+  width: 350px;
+}
+
+.css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article > .css-bayan__article-meme {
+  transform: scale(1);
+}
+
+.css-bayan__item:hover > .css-bayan__label > .css-bayan__article > .css-bayan__article-meme {
+  transition: transform 0.3s ease-in-out 0s;
+  transform: scale(1);
+}
+
+.css-bayan:hover .css-bayan__radio:checked ~ .css-bayan__label .css-bayan__icon,
+.css-bayan:hover .css-bayan__radio:not(:checked) ~ .css-bayan__label .css-bayan__icon {
   opacity: 1;
+}
+
+.css-bayan__item:active .css-bayan__label > .css-bayan__box,
+.css-bayan__item:active .css-bayan__label > .css-bayan__article,
+.css-bayan__item:active .css-bayan__label > .css-bayan__box + .css-bayan__icon {
+  color: #0020d5;
+  opacity: 0.8;
 }
 
 .css-bayan__item:hover .css-bayan__label > .css-bayan__article {
   transition: height 0.3s ease 0s;
-  height: 100px;
+  height: 380px;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
-.css-bayan__item:hover > .css-bayan__label > .css-bayan__title::after,
-.css-bayan:hover .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__title::after {
+.css-bayan__item:hover > .css-bayan__label .css-bayan__icon,
+.css-bayan:hover .css-bayan__radio:checked ~ .css-bayan__label .css-bayan__icon {
   top: 32%;
   transform: rotate(45deg);
   transform-origin: center;
@@ -53,9 +81,9 @@
 
 .css-bayan__article {
   overflow: hidden;
-  height: 0px;
+  height: 0;
   position: relative;
-  background-color: #979797;
+  text-align: center;
 }
 
 .css-bayan:hover .css-bayan__label {
@@ -67,5 +95,7 @@
 }
 .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article {
   transition: height 0.3s ease 0s;
-  height: 100px;
+  height: 380px;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
