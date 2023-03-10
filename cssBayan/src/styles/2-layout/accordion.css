@@ -19,7 +19,7 @@
   line-height: 2.1rem;
   font-size: 1.1rem;
   cursor: pointer;
-  border-top: 2px solid #3d3d3d;
+  border-top: 2px solid #cbcbcb;
 }
 .css-bayan__box {
   position: relative;
@@ -55,10 +55,12 @@
 }
 
 .css-bayan__item:active .css-bayan__label > .css-bayan__box,
-.css-bayan__item:active .css-bayan__label > .css-bayan__article,
-.css-bayan__item:active .css-bayan__label > .css-bayan__box + .css-bayan__icon {
+.css-bayan__item:active .css-bayan__label > .css-bayan__article {
   color: #0020d5;
   opacity: 0.8;
+}
+.css-bayan__item:active .css-bayan__label > .css-bayan__box .css-bayan__icon path {
+  fill: #0020d5;
 }
 
 .css-bayan__item:hover .css-bayan__label > .css-bayan__article {
