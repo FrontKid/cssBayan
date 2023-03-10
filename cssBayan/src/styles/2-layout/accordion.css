@@ -1,30 +1,50 @@
+.css-bayan {
+  cursor: pointer;
+}
+
 .css-bayan__label {
   position: relative;
   display: block;
-  padding: 5px 20px;
   z-index: 10;
-  color: #3d3d3d;
+  color: #0020d5;
   line-height: 2.1rem;
   font-size: 1.1rem;
   cursor: pointer;
   border-top: 2px solid #3d3d3d;
 }
-
-.css-bayan__label--last-child {
-  border-bottom: 2px solid #3d3d3d;
+.css-bayan__title {
+  position: relative;
 }
-
-.css-bayan:hover .css-bayan__label:after {
+.css-bayan__title::after {
   content: "";
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   right: 0;
-  top: 0;
-  background: url("../../img/plus.png");
+  top: 50%;
+  opacity: 0;
+  transform: translateY(-50%);
+  background-image: url("../../img/plus.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.css-bayan:hover .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__title::after,
+.css-bayan:hover .css-bayan__radio:not(:checked) ~ .css-bayan__label > .css-bayan__title::after {
+  opacity: 1;
+}
+
+.css-bayan__item:hover .css-bayan__label > .css-bayan__article {
+  transition: height 0.3s ease 0s;
+  height: 100px;
+}
+
+.css-bayan__item:hover > .css-bayan__label > .css-bayan__title::after,
+.css-bayan:hover .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__title::after {
+  top: 32%;
+  transform: rotate(45deg);
+  transform-origin: center;
 }
 
 .css-bayan__radio {
@@ -38,7 +58,14 @@
   background-color: #979797;
 }
 
-.css-bayan__radio:checked ~ .css-bayan__article {
+.css-bayan:hover .css-bayan__label {
+  color: black;
+}
+
+.css-bayan__radio:checked ~ .css-bayan__label {
+  color: black;
+}
+.css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article {
   transition: height 0.3s ease 0s;
   height: 100px;
 }
