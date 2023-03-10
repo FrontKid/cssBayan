@@ -1,0 +1,44 @@
+.css-bayan__label {
+  position: relative;
+  display: block;
+  padding: 5px 20px;
+  z-index: 10;
+  color: #3d3d3d;
+  line-height: 2.1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-top: 2px solid #3d3d3d;
+}
+
+.css-bayan__label--last-child {
+  border-bottom: 2px solid #3d3d3d;
+}
+
+.css-bayan:hover .css-bayan__label:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 0;
+  top: 0;
+  background: url("../../img/plus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.css-bayan__radio {
+  display: none;
+}
+
+.css-bayan__article {
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  background-color: #979797;
+}
+
+.css-bayan__radio:checked ~ .css-bayan__article {
+  transition: height 0.3s ease 0s;
+  height: 100px;
+}
