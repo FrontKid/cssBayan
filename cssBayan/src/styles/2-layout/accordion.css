@@ -62,7 +62,7 @@
 }
 
 /* *************************************************** */
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .css-bayan,
   .css-bayan__label {
     cursor: pointer;
