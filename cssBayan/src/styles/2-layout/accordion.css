@@ -103,16 +103,22 @@
   }
   @media (max-width: 720px) {
     .css-bayan__icon {
-      /*opacity: 1;*/
+      opacity: 1;
     }
 
     .css-bayan__item:hover .css-bayan__label > .css-bayan__article {
-      height: 40vmax;
+      height: 35vmax;
     }
   }
 }
 @media screen and (max-width: 800px) {
   .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article {
     height: 40vmax;
+  }
+}
+
+@media (max-width: 720px) {
+  .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article {
+    height: 35vmax;
   }
 }
