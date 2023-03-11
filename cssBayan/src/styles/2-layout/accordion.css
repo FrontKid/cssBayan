@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 0.625rem 0;
   transition: color 0.3s ease 0s;
 }
 .css-bayan__icon {
@@ -42,15 +42,6 @@
   height: 100%;
 }
 
-.css-bayan__item:active .css-bayan__label > .css-bayan__box,
-.css-bayan__item:active .css-bayan__label > .css-bayan__article {
-  color: #0020d5;
-  opacity: 0.8;
-}
-.css-bayan__item:active .css-bayan__label > .css-bayan__box .css-bayan__icon path {
-  fill: #0020d5;
-}
-
 .css-bayan__radio {
   display: none;
 }
@@ -61,6 +52,14 @@
   text-align: center;
 }
 
+.css-bayan__item:active .css-bayan__label > .css-bayan__box,
+.css-bayan__item:active .css-bayan__label > .css-bayan__article {
+  color: #0020d5;
+  opacity: 0.8;
+}
+.css-bayan__item:active .css-bayan__label > .css-bayan__box .css-bayan__icon path {
+  fill: #0020d5;
+}
 .css-bayan__radio:checked ~ .css-bayan__label {
   color: black;
 }
@@ -103,6 +102,9 @@
     }
   }
   @media (max-width: 720px) {
+    .css-bayan__item:active {
+      all: initial;
+    }
     .css-bayan__item:hover .css-bayan__label > .css-bayan__article {
       height: 30vmax;
     }
