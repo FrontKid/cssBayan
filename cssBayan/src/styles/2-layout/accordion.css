@@ -12,7 +12,6 @@
 }
 
 .css-bayan__label {
-  position: relative;
   display: block;
   z-index: 10;
   color: #0020d5;
@@ -22,17 +21,16 @@
   border-top: 2px solid #cbcbcb;
 }
 .css-bayan__box {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 0;
 }
 .css-bayan__icon {
-  position: absolute;
-  right: 0;
-  top: 50%;
   opacity: 0;
   width: 1.1rem;
   height: 1.1rem;
-  transform: translateY(-50%);
+  transition: transform 0.2s ease 0s;
 }
 
 .css-bayan__article-meme {
@@ -69,10 +67,12 @@
   padding-bottom: 20px;
   padding-top: 10px;
 }
+/*.css-bayan__item:hover > .css-bayan__label .css-bayan__icon {
+  transition: all 1s ease 0s;
+}*/
 
 .css-bayan__item:hover > .css-bayan__label .css-bayan__icon,
 .css-bayan:hover .css-bayan__radio:checked ~ .css-bayan__label .css-bayan__icon {
-  top: 32%;
   transform: rotate(45deg);
   transform-origin: center;
 }
@@ -84,7 +84,6 @@
 .css-bayan__article {
   overflow: hidden;
   height: 0;
-  position: relative;
   text-align: center;
 }
 
