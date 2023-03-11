@@ -3,8 +3,9 @@
 }
 
 .css-bayan-title {
-  font-size: 2.5rem;
+  font-size: 25rem;
   padding: 1.4rem 0;
+  color: black;
 }
 
 .css-bayan__title {
@@ -124,7 +125,7 @@
   .css-bayan__item:active .css-bayan__label > .css-bayan__box,
   .css-bayan__item:active .css-bayan__label > .css-bayan__article {
     color: black;
-    opacity: 1;
+    opacity: 0;
   }
   .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article {
     height: 35vmax;
