@@ -121,6 +121,11 @@
   .css-bayan:hover .css-bayan__radio:checked ~ .css-bayan__label .css-bayan__icon {
     display: none;
   }
+  .css-bayan__item:active .css-bayan__label > .css-bayan__box,
+  .css-bayan__item:active .css-bayan__label > .css-bayan__article {
+    color: black;
+    opacity: 1;
+  }
   .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article {
     height: 35vmax;
   }
