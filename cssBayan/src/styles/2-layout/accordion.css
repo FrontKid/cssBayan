@@ -95,7 +95,6 @@
 }
 
 @media screen and (max-width: 800px) {
-  .css-bayan__item:hover .css-bayan__label > .css-bayan__article,
   .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article {
     height: 40vh;
   }
@@ -105,7 +104,7 @@
   .css-bayan__icon {
     display: none;
   }
-  .css-bayan__item:hover .css-bayan__label > .css-bayan__article,
+
   .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article {
     height: 35vh;
   }
