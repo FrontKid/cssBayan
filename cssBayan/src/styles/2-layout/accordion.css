@@ -34,17 +34,11 @@
 }
 
 .css-bayan__article-meme {
-  transform: scale(0);
   width: 350px;
-}
-
-.css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article > .css-bayan__article-meme {
-  transform: scale(1);
 }
 
 .css-bayan__item:hover > .css-bayan__label > .css-bayan__article > .css-bayan__article-meme {
   transition: transform 0.3s ease-in-out 0s;
-  transform: scale(1);
 }
 
 .css-bayan:hover .css-bayan__radio:checked ~ .css-bayan__label .css-bayan__icon,
