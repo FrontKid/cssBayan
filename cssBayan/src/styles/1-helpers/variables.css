@@ -1,0 +1,12 @@
+:root {
+  /* colors */
+  --blue: #0020d5;
+  --black: #000000;
+  --main-background: #f5f5eb;
+
+  /* sizes 1rem === 16px, 0.5rem === 8px */
+  --article-pad-b: 1.25rem;
+  --article-pad-t: 0.625rem;
+  --article-height: 25rem;
+  --container-pd-lr: 0.9375rem;
+}
