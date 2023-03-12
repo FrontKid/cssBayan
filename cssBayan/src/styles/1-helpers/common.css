@@ -8,9 +8,9 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #0020d5;
+  color: var(--blue);
   font-weight: 700;
-  background-color: #f5f5eb;
+  background-color: var(--main-background);
 }
 
 .container {
@@ -22,8 +22,8 @@ body {
     font-size: 90%;
   }
   .container {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: var(--container-pd-lr);
+    padding-right: var(--container-pd-lr);
   }
 }
 

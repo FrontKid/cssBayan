@@ -1,7 +1,7 @@
 .css-bayan-title {
   font-size: 2.5rem;
   padding: 1.4rem 0;
-  color: black;
+  color: var(--black);
 }
 
 .css-bayan__title {
@@ -12,7 +12,7 @@
 .css-bayan__label {
   display: block;
   z-index: 10;
-  color: #0020d5;
+  color: var(--blue);
   line-height: 2.1rem;
   font-size: 1.1rem;
   border-top: 0.125rem solid #cbcbcb;
@@ -52,13 +52,13 @@
 }
 
 .css-bayan__radio:checked ~ .css-bayan__label {
-  color: black;
+  color: var(--black);
 }
 .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article {
   transition: height 0.3s ease 0s;
-  height: 25rem;
-  padding-bottom: 1.25rem;
-  padding-top: 0.625rem;
+  height: var(--article-height);
+  padding-bottom: var(--article-pad-b);
+  padding-top: var(--article-pad-t);
 }
 
 /* *************************************************** */
@@ -78,9 +78,9 @@
 
   .css-bayan__item:hover .css-bayan__label > .css-bayan__article {
     transition: height 0.3s ease 0s, opacity 0.3s ease 0s;
-    height: 25rem;
-    padding-bottom: 1.25rem;
-    padding-top: 0.625rem;
+    height: var(--article-height);
+    padding-bottom: var(--article-pad-b);
+    padding-top: var(--article-pad-t);
   }
 
   .css-bayan__item:hover > .css-bayan__label .css-bayan__icon,
@@ -90,7 +90,7 @@
   }
 
   .css-bayan:hover .css-bayan__label {
-    color: black;
+    color: var(--black);
   }
 }
 
@@ -113,11 +113,11 @@
 @media (min-width: 821px) {
   .css-bayan__item:active .css-bayan__label > .css-bayan__box,
   .css-bayan__item:active .css-bayan__label > .css-bayan__article {
-    color: #0020d5;
+    color: var(--blue);
     opacity: 0.8;
   }
   .css-bayan__item:active .css-bayan__label > .css-bayan__box .css-bayan__icon path {
-    fill: #0020d5;
+    fill: var(--blue);
   }
 }
 
