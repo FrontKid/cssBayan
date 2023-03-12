@@ -15,7 +15,7 @@
   color: #0020d5;
   line-height: 2.1rem;
   font-size: 1.1rem;
-  border-top: 2px solid #cbcbcb;
+  border-top: 0.125rem solid #cbcbcb;
 }
 .css-bayan__box {
   display: flex;
@@ -118,5 +118,17 @@
   }
   .css-bayan__item:active .css-bayan__label > .css-bayan__box .css-bayan__icon path {
     fill: #0020d5;
+  }
+}
+
+@media (max-width: 340px) and (max-height: 600px) {
+  .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 340px) and (min-height: 760px) {
+  .css-bayan__radio:checked ~ .css-bayan__label > .css-bayan__article {
+    height: 20rem;
   }
 }
